@@ -17,64 +17,20 @@
     var unityInstance = UnityLoader.instantiate("unityContainer", "Build/webGL2.json", {onProgress: UnityProgress});
   </script>
   <style>
-      html, body {height: 100%;}
-  	/*body {
-		display: block;
-		margin: 0px;
-		height:100%;
-	}*/
-	.webgl-content {
-    position: absolute;
-    width: 100%;
-    /* top: 50%; */
-    height: 100%;
-    /* left: 50%; */
-    /* -webkit-transform: translate(-50%, -50%); */
-    /* transform: translate(-50%, -50%); */
-}
-
-#unityContainer {
-width: 100%;
-height: 100%;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-    position: relative;
-    background: rgb(35, 31, 32);
-}  
+    html, body {height: 100%;}
+    
+    /* + Unity player styles + */
+    .webgl-content { width: 100%; height: 100%; }
+    #unityContainer { width: 100%; height: 100%; padding: 0px; margin: 0px; border: 0px; position: relative; background: rgb(35, 31, 32);
+}   /* - Unity player styles - */
       
-      /* TIMELINE */
-      ul.timeline {
-    list-style-type: none;
-    position: relative;
-}
-ul.timeline:before {
-    content: ' ';
-    background: #d4d9df;
-    display: inline-block;
-    position: absolute;
-    left: 29px;
-    width: 2px;
-    height: 100%;
-    z-index: 400;
-}
-ul.timeline > li {
-    margin: 20px 0;
-    padding-left: 20px;
-}
-ul.timeline > li:before {
-    content: ' ';
-    background: white;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid #22c0e8;
-    left: 20px;
-    width: 20px;
-    height: 20px;
-    z-index: 400;
-}
-
+    /* + TIMELINE + */
+    ul.timeline { list-style-type: none; position: relative;}
+    ul.timeline:before { content: ' '; background: #d4d9df; display: inline-block; position: absolute; left: 29px; width: 2px; height: 100%; z-index: 400;}
+    ul.timeline > li {margin: 20px 0;padding-left: 20px;}
+    ul.timeline > li:before {content: ' ';background: white;display: inline-block;position: absolute;border-radius: 50%;border: 3px solid #22c0e8;left: 20px;width: 20px;height: 20px;z-index: 400;}
+    /* - TIMELINE - */
+      
   </style>
 </head>
 <body>
@@ -153,109 +109,16 @@ ul.timeline > li:before {
 
 <div class="container-fluid h-100">
     <div class="row h-100">
-        <div class="col-3">
-            <h3>Organizacijske enote</h3>
-            <div id="accordion">
-
-              <div class="card">
-                <div class="card-header">
-                  <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                    Srednja strojna šola
-                  </a>
-                </div>
-                <div id="collapseOne" class="collapse show" data-parent="#accordion">
-                  <div class="card-body">
-                    povezave ...
-                  </div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="card-header">
-                  <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                    Srednja elektro šola in tehniška gimnazija
-                  </a>
-                </div>
-                <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                  <div class="card-body">
-                    povezave
-                  </div>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="card-header">
-                  <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                    Srednja zdravstvena in kemijska šola
-                  </a>
-                </div>
-                <div id="collapseThree" class="collapse" data-parent="#accordion">
-                  <div class="card-body">
-                    povezave
-                  </div>
-                </div>
-              </div>
-              
-              <div class="card">
-                <div class="card-header">
-                  <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
-                    Srednja gradbena, lesarska in vzgojiteljska šola
-                  </a>
-                </div>
-                <div id="collapseFour" class="collapse" data-parent="#accordion">
-                  <div class="card-body">
-                    povezave
-                  </div>
-                </div>
-              </div>
-              
-              <div class="card">
-                <div class="card-header">
-                  <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
-                    Enota za izobraževanje odraslih
-                  </a>
-                </div>
-                <div id="collapseFive" class="collapse" data-parent="#accordion">
-                  <div class="card-body">
-                    povezave
-                  </div>
-                </div>
-              </div>
-              
-              <div class="card">
-                <div class="card-header">
-                  <a class="collapsed card-link" data-toggle="collapse" href="#collapseSix">
-                    Višja strokovna šola
-                  </a>
-                </div>
-                <div id="collapseSix" class="collapse" data-parent="#accordion">
-                  <div class="card-body">
-                    povezave
-                  </div>
-                </div>
-              </div>
-              
-              <div class="card">
-                <div class="card-header">
-                  <a class="collapsed card-link" data-toggle="collapse" href="#collapseSeven">
-                    Medpodjetniški izobraževalni center
-                  </a>
-                </div>
-                <div id="collapseSeven" class="collapse" data-parent="#accordion">
-                  <div class="card-body">
-                    povezave
-                  </div>
-                </div>
-              </div>
-
-            </div>            
-                                    
-        </div>
+       
+        <!-- + unity container + -->
         <div class="col-9">
             <div class="webgl-content">
               <div id="unityContainer"></div>
             </div>
         </div>
+        <!-- - unity container - -->
+        
+        <!-- + timeline container + -->
         <div class="col-3 mt-4">
             <h3>Napovednik</h3>
             <ul class="timeline">
@@ -276,6 +139,7 @@ ul.timeline > li:before {
 				</li>
 			</ul>
         </div>
+        <!-- - timeline container - -->
     </div>
 </div>
 
