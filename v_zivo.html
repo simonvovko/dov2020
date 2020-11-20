@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dan odprtih vrat 2020 - Šolski center Novo mesto</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <style>
+    html, body {height: 100%;}
+    
+    /* + navbar colors + */
+    #navbardropMIC:hover {background-color: #8094DD;}
+    #navbardropVSS:hover {background-color: #009FDF;}
+    #navbardropEIO:hover {background-color: #FFD30A;}
+    #navbardropSGLVS:hover {background-color: #E5A200;}
+    #navbardropSZKS:hover {background-color: #EF4A81;}
+    #navbardropSESTG:hover {background-color: #009639;}
+    #navbardropSSS:hover {background-color: #0057B8;}
+    /* - navbar colors - */
+  </style>
+  
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="30" height="30"  alt="Logotip Šolskega centra Novo mesto"></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class="navbar-nav">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardropSSS" data-toggle="dropdown">SSŠ</a>
+      <div class="dropdown-menu" style="background-color: #0057B8;">
+        <a class="dropdown-item" href="sss/">Več informacij</a>
+        <a class="dropdown-item" href="#">Videokonferenca 1</a>
+        <a class="dropdown-item" href="#">Videokonferenca 2</a>
+        <a class="dropdown-item" href="#">...</a>
+      </div>
+    </li>
+    
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardropSESTG" data-toggle="dropdown">SEŠTG</a>
+      <div class="dropdown-menu" style="background-color: #009639;">
+        <a class="dropdown-item" href="sestg/">Več informacij</a>
+        <a class="dropdown-item" href="#">Videokonferenca 1</a>
+        <a class="dropdown-item" href="#">Videokonferenca 2</a>
+        <a class="dropdown-item" href="#">...</a>
+      </div>
+    </li>
+    
+     <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardropSZKS" data-toggle="dropdown">SZKŠ</a>
+      <div class="dropdown-menu" style="background-color: #EF4A81;">
+        <a class="dropdown-item" href="szks/">Več informacij</a>
+        <a class="dropdown-item" href="#">Videokonferenca 1</a>
+        <a class="dropdown-item" href="#">Videokonferenca 2</a>
+        <a class="dropdown-item" href="#">...</a>
+      </div>
+    </li>
+    
+     <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardropSGLVS" data-toggle="dropdown">SGLVŠ</a>
+      <div class="dropdown-menu" style="background-color: #E5A200;">
+        <a class="dropdown-item" href="sglvs/">Več informacij</a>
+        <a class="dropdown-item" href="#">Videokonferenca 1</a>
+        <a class="dropdown-item" href="#">Videokonferenca 2</a>
+        <a class="dropdown-item" href="#">...</a>
+      </div>
+    </li>
+    
+     <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardropEIO" data-toggle="dropdown">EIO</a>
+      <div class="dropdown-menu" style="background-color: #FFD30A;">
+        <a class="dropdown-item" href="eio/">Več informacij</a>
+        <a class="dropdown-item" href="#">Videokonferenca 1</a>
+        <a class="dropdown-item" href="#">Videokonferenca 2</a>
+        <a class="dropdown-item" href="#">...</a>
+      </div>
+    </li>
+    
+     <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardropVSS" data-toggle="dropdown">VSŠ</a>
+      <div class="dropdown-menu" style="background-color: #009FDF;">
+        <a class="dropdown-item" href="vss/">Več informacij</a>
+        <a class="dropdown-item" href="#">Videokonferenca 1</a>
+        <a class="dropdown-item" href="#">Videokonferenca 2</a>
+        <a class="dropdown-item" href="#">...</a>
+      </div>
+    </li>
+    
+     <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardropMIC" data-toggle="dropdown">MIC</a>
+      <div class="dropdown-menu" style="background-color: #8094DD;">
+        <a class="dropdown-item" href="mic/">Več informacij</a>
+        <a class="dropdown-item" href="#">Videokonferenca 1</a>
+        <a class="dropdown-item" href="#">Videokonferenca 2</a>
+        <a class="dropdown-item" href="#">...</a>
+      </div>
+    </li>
+
+  </ul>
+  </div>
+</nav>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col">
+            
+            <div id="accordion">
+
+              <div class="card">
+                <div class="card-header" style="background-color: #0057B8;">
+                  <a class="card-link text-white" data-toggle="collapse" href="#collapseSSS">
+                    Srednja strojna šola
+                  </a>
+                </div>
+                <div id="collapseSSS" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    
+                    <!-- + programi SSS + -->
+                    <div id="accordionSSS">
+                    <div class="card">
+                        <div class="card-header">
+                          <a class="collapsed card-link" data-toggle="collapse" href="#collapseSSSProgrami">
+                            Strojni tehnik
+                          </a>
+                        </div>
+                        <div id="collapseSSSProgrami" class="collapse" data-parent="#accordionSSS">
+                          <div class="card-body">
+                              <a href="#">Videokonferenca 1</a> <br>
+                              <a href="#">Videokonferenca 2</a> <br>
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- - programi SSS - -->
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" style="background-color: #009639;">
+                  <a class="card-link text-white" data-toggle="collapse" href="#collapseSESTG">
+                    Srednja elektro šola in tehniška gimnazija
+                  </a>
+                </div>
+                <div id="collapseSESTG" class="collapse show" data-parent="#accordion">
+                  <div class="card-body">
+                    
+                    <!-- + programi SESTG + -->
+                    <div id="accordionSESTG">
+                      
+                       <!-- + programi SESTG - tehniška gimnazija + -->
+                        <div class="card">
+                            <div class="card-header">
+                              <a class="collapsed card-link" data-toggle="collapse" href="#collapseSESTG_TG">
+                                Tehniška gimnazija
+                              </a>
+                            </div>
+                            <div id="collapseSESTG_TG" class="collapse" data-parent="#accordionSESTG">
+                              <div class="card-body">
+                                  <a href="#">Videokonferenca 1</a> <br>
+                                  <a href="#">Videokonferenca 2</a> <br>
+                              </div>
+                            </div>
+                        </div>
+                        <!-- - programi SESTG - tehniška gimnazija - -->
+                        
+                        <!-- + programi SESTG - tehnik računalništva + -->
+                        <div class="card">
+                            <div class="card-header">
+                              <a class="collapsed card-link" data-toggle="collapse" href="#collapseSESTG_TR">
+                                Tehnik računalništva
+                              </a>
+                            </div>
+                            <div id="collapseSESTG_TR" class="collapse" data-parent="#accordionSESTG">
+                              <div class="card-body">
+                                  <a href="#">Videokonferenca 1</a> <br>
+                                  <a href="#">Videokonferenca 2</a> <br>
+                              </div>
+                            </div>
+                        </div>
+                        <!-- + programi SESTG - tehnik računalništva + -->
+                        
+                        <!-- + programi SESTG - elektrotehnika + -->
+                        <div class="card">
+                            <div class="card-header">
+                              <a class="collapsed card-link" data-toggle="collapse" href="#collapseSESTG_ELE">
+                                Elektrotehnik
+                              </a>
+                            </div>
+                            <div id="collapseSESTG_ELE" class="collapse" data-parent="#accordionSESTG">
+                              <div class="card-body">
+                                  <a href="#">Videokonferenca 1</a> <br>
+                                  <a href="#">Videokonferenca 2</a> <br>
+                              </div>
+                            </div>
+                        </div>
+                        <!-- - programi SESTG - elektrotehnik - -->
+                        
+                    </div>
+                    <!-- - programi SESTG - -->
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" style="background-color: #EF4A81;">
+                  <a class="collapsed card-link text-white" data-toggle="collapse" href="#collapseSZKS">
+                    Srednja zdravstvena in kemijska šola
+                  </a>
+                </div>
+                <div id="collapseSZKS" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                      <!-- + programi SZKS + -->
+                      <div id="accordionSZKS">
+                          
+                      </div><!-- - programi SZKS - -->
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-header" style="background-color: #E5A200;">
+                  <a class="collapsed card-link text-white" data-toggle="collapse" href="#collapseSGLVS">
+                    Srednja gradbena, lesarska in vzgojiteljska šola
+                  </a>
+                </div>
+                <div id="collapseSGLVS" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                  
+                   <!-- + programi SGLVS + -->
+                    <div id="accordionSGLVS">
+                          
+                    </div><!-- - programi SGLVS - -->
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-header" style="background-color: #FFD30A;">
+                  <a class="collapsed card-link text-white" data-toggle="collapse" href="#collapseEIO">
+                    Enota za izobraževanje odraslih
+                  </a>
+                </div>
+                <div id="collapseEIO" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                   <!-- + programi EIO + -->
+                    <div id="accordionEIO">
+                          
+                    </div><!-- - programi EIO - -->
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-header" style="background-color: #009FDF;">
+                  <a class="collapsed card-link text-white" data-toggle="collapse" href="#collapseVSS">
+                    Višja strokovna šola
+                  </a>
+                </div>
+                <div id="collapseVSS" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                   <!-- + programi VSS + -->
+                    <div id="accordionVSS">
+                          
+                    </div><!-- - programi VSS - -->
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-header" style="background-color: #8094DD;">
+                  <a class="collapsed card-link text-white" data-toggle="collapse" href="#collapseMIC">
+                    Medpodjetniški izobraževalni center
+                  </a>
+                </div>
+                <div id="collapseMIC" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                   <!-- + programi MIC + -->
+                    <div id="accordionMIC">
+                          
+                    </div><!-- - programi MIC - -->
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
