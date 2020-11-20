@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap 4 Example</title>
+  <title>Dan odprtih vrat 2020 - Šolski center Novo mesto</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
   <link rel="shortcut icon" href="TemplateData/favicon.ico">
   <link rel="stylesheet" href="TemplateData/style.css">
@@ -23,123 +24,120 @@
     .webgl-content { width: 100%; height: 100%; }
     #unityContainer { width: 100%; height: 100%; padding: 0px; margin: 0px; border: 0px; position: relative; background: rgb(35, 31, 32);}
     /* - Unity player styles - */
-      
-    /* + TIMELINE + */
-    ul.timeline { list-style-type: none; position: relative;}
-    ul.timeline:before { content: ' '; background: #d4d9df; display: inline-block; position: absolute; left: 29px; width: 2px; height: 100%; z-index: 400;}
-    ul.timeline > li {margin: 20px 0;padding-left: 20px;}
-    ul.timeline > li:before {content: ' ';background: white;display: inline-block;position: absolute;border-radius: 50%;border: 3px solid #22c0e8;left: 20px;width: 20px;height: 20px;z-index: 400;}
-    /* - TIMELINE - */
-      
+    
+    /* + navbar colors + */
+    #navbardropMIC:hover {background-color: #8094DD;}
+    #navbardropVSS:hover {background-color: #009FDF;}
+    #navbardropEIO:hover {background-color: #FFD30A;}
+    #navbardropSGLVS:hover {background-color: #E5A200;}
+    #navbardropSZKS:hover {background-color: #EF4A81;}
+    #navbardropSESTG:hover {background-color: #009639;}
+    #navbardropSSS:hover {background-color: #0057B8;}
+    /* - navbar colors - */
   </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
   <!-- Brand -->
-  <a class="navbar-brand" href="#">ŠCNM</a>
+  <a class="navbar-brand" href="#"><img src="img/logo.png" width="30" height="30"  alt="Logotip Šolskega centra Novo mesto"></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
   <!-- Links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
   <ul class="navbar-nav">
     <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">SSŠ</a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Link 1</a>
-        <a class="dropdown-item" href="#">Link 2</a>
-        <a class="dropdown-item" href="#">Link 3</a>
+      <a class="nav-link dropdown-toggle" href="#" id="navbardropSSS" data-toggle="dropdown">SSŠ</a>
+      <div class="dropdown-menu" style="background-color: #0057B8;">
+        <a class="dropdown-item" href="sss/">Več informacij</a>
+        <a class="dropdown-item" href="#">Videokonferenca 1</a>
+        <a class="dropdown-item" href="#">Videokonferenca 2</a>
+        <a class="dropdown-item" href="#">...</a>
       </div>
     </li>
     
     <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">SEŠTG</a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Link 1</a>
-        <a class="dropdown-item" href="#">Link 2</a>
-        <a class="dropdown-item" href="#">Link 3</a>
+      <a class="nav-link dropdown-toggle" href="#" id="navbardropSESTG" data-toggle="dropdown">SEŠTG</a>
+      <div class="dropdown-menu" style="background-color: #009639;">
+        <a class="dropdown-item" href="sestg/">Več informacij</a>
+        <a class="dropdown-item" href="#">Videokonferenca 1</a>
+        <a class="dropdown-item" href="#">Videokonferenca 2</a>
+        <a class="dropdown-item" href="#">...</a>
       </div>
     </li>
     
      <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">SZKŠ</a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Link 1</a>
-        <a class="dropdown-item" href="#">Link 2</a>
-        <a class="dropdown-item" href="#">Link 3</a>
+      <a class="nav-link dropdown-toggle" href="#" id="navbardropSZKS" data-toggle="dropdown">SZKŠ</a>
+      <div class="dropdown-menu" style="background-color: #EF4A81;">
+        <a class="dropdown-item" href="szks/">Več informacij</a>
+        <a class="dropdown-item" href="#">Videokonferenca 1</a>
+        <a class="dropdown-item" href="#">Videokonferenca 2</a>
+        <a class="dropdown-item" href="#">...</a>
       </div>
     </li>
     
      <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">SGLVŠ</a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Link 1</a>
-        <a class="dropdown-item" href="#">Link 2</a>
-        <a class="dropdown-item" href="#">Link 3</a>
+      <a class="nav-link dropdown-toggle" href="#" id="navbardropSGLVS" data-toggle="dropdown">SGLVŠ</a>
+      <div class="dropdown-menu" style="background-color: #E5A200;">
+        <a class="dropdown-item" href="sglvs/">Več informacij</a>
+        <a class="dropdown-item" href="#">Videokonferenca 1</a>
+        <a class="dropdown-item" href="#">Videokonferenca 2</a>
+        <a class="dropdown-item" href="#">...</a>
       </div>
     </li>
     
      <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">EIO</a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Link 1</a>
-        <a class="dropdown-item" href="#">Link 2</a>
-        <a class="dropdown-item" href="#">Link 3</a>
+      <a class="nav-link dropdown-toggle" href="#" id="navbardropEIO" data-toggle="dropdown">EIO</a>
+      <div class="dropdown-menu" style="background-color: #FFD30A;">
+        <a class="dropdown-item" href="eio/">Več informacij</a>
+        <a class="dropdown-item" href="#">Videokonferenca 1</a>
+        <a class="dropdown-item" href="#">Videokonferenca 2</a>
+        <a class="dropdown-item" href="#">...</a>
       </div>
     </li>
     
      <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">VSŠ</a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Link 1</a>
-        <a class="dropdown-item" href="#">Link 2</a>
-        <a class="dropdown-item" href="#">Link 3</a>
+      <a class="nav-link dropdown-toggle" href="#" id="navbardropVSS" data-toggle="dropdown">VSŠ</a>
+      <div class="dropdown-menu" style="background-color: #009FDF;">
+        <a class="dropdown-item" href="vss/">Več informacij</a>
+        <a class="dropdown-item" href="#">Videokonferenca 1</a>
+        <a class="dropdown-item" href="#">Videokonferenca 2</a>
+        <a class="dropdown-item" href="#">...</a>
       </div>
     </li>
     
      <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">MIC</a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Link 1</a>
-        <a class="dropdown-item" href="#">Link 2</a>
-        <a class="dropdown-item" href="#">Link 3</a>
+      <a class="nav-link dropdown-toggle" href="#" id="navbardropMIC" data-toggle="dropdown">MIC</a>
+      <div class="dropdown-menu" style="background-color: #8094DD;">
+        <a class="dropdown-item" href="mic/">Več informacij</a>
+        <a class="dropdown-item" href="#">Videokonferenca 1</a>
+        <a class="dropdown-item" href="#">Videokonferenca 2</a>
+        <a class="dropdown-item" href="#">...</a>
       </div>
+    </li>
+    
+    <li>
+        <a href="v_zivo.html" class="btn btn-primary align-middle">Dogodki v živo <i class="fa fa-video-camera" style="color:white;"></i></a>
     </li>
 
   </ul>
+  </div>
 </nav>
 
 <div class="container-fluid h-100">
     <div class="row h-100">
        
         <!-- + unity container + -->
-        <div class="col-9">
+        <!--div class="col"-->
             <div class="webgl-content">
               <div id="unityContainer"></div>
             </div>
-        </div>
+        <!--/div-->
         <!-- - unity container - -->
         
-        <!-- + timeline container + -->
-        <div class="col-3 mt-4">
-            <h3>Napovednik</h3>
-            <ul class="timeline">
-				<li>
-					<a target="_blank" href="https://www.totoprayogo.com/#">Nagovor direktorja</a>
-					<a href="#" class="float-right">8.00</a>
-					<p>Par besed direktorja</p>
-				</li>
-				<li>
-					<a href="#">To in ono</a>
-					<a href="#" class="float-right">8.05</a>
-                    <p>Bla bla <a href="#">Link do konference</a></p>
-				</li>
-				<li>
-					<a href="#">Ono in drugo</a>
-					<a href="#" class="float-right">8.10</a>
-					<p>Vse kar še ni bilo povedanega</p>
-				</li>
-			</ul>
-        </div>
-        <!-- - timeline container - -->
     </div>
 </div>
 
